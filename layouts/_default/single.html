@@ -10,6 +10,11 @@
 			<strong>tl;dr:</strong>
 			{{ .Params.tldr }}
 		</div>{{ end }}
+		{{ if .Params.toc }}
+		<aside>
+			{{ .TableOfContents }}
+		</aside>
+		{{ end }}
 
 		<section class="body">
 			{{ .Content }}
